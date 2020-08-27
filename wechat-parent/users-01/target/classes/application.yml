@@ -1,0 +1,13 @@
+server:
+  port: 8890
+spring:
+  application:
+    name: users
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8888/eureka/

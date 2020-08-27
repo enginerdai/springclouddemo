@@ -1,0 +1,11 @@
+server:
+  port: 9888
+spring:
+  application:
+    name: order-consumer
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: false #不注册到consul

@@ -1,0 +1,19 @@
+server:
+  port: 8891
+spring:
+  application:
+    name: test
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8888/eureka
+    register-with-eureka: true
+    fetch-registry: true

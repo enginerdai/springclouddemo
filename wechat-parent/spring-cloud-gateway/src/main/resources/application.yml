@@ -1,0 +1,20 @@
+server:
+  port: 8006
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: neo_route
+          uri: http://www.ityouknow.com
+          predicates:
+            - Path=/spring-cloud
+      discovery: #开启服务发现
+        locator:
+          enabled: true
+# filters 过滤规则
+
+#上述配置意思: 配置了一个 id 为 neo_route 的路由规则，当访问地址 http://localhost:8006/spring-cloud时
+#会自动转发到地址：http://www.ityouknow.com/spring-cloud。配置完成启动项目即可在浏览器访问进行测试，
+#当我们访问地址http://localhost:8006/spring-cloud
