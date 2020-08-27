@@ -24,14 +24,12 @@
         <module>spring-cloud-hystrix-dashboard</module>
         <module>spring-cloud-gateway</module>
         <module>spring-cloud-config-client3366</module>
-        <module>spring-cloud-consul-server9871</module>
         <module>spring-cloud-provider9871</module>
         <module>spring-cloud-provider9872</module>
         <module>spring-cloud-consul-consumer9888</module>
         <module>cloud-stream-rabbitmq-provider8801</module>
         <module>cloud-stream-rabbitmq-consumer8802</module>
         <module>cloud-stream-rabbitmq-consumer8803</module>
-        <module>cloud-sleuth-server</module>
     </modules>
 
     <!--父依赖-->
